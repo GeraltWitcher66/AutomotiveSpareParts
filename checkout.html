@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تسویه حساب | یدکیار</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path d="M12 2.6l1.9 2.1 2.8-.5.6 2.8 2.4 1.5-1.4 2.5 1.4 2.5-2.4 1.5-.6 2.8-2.8-.5L12 21.4l-1.9-2.1-2.8.5-.6-2.8-2.4-1.5 1.4-2.5L4.3 8l2.4-1.5.6-2.8 2.8.5z"/><circle cx="12" cy="12" r="3.3"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 16v-3.2L6 8h12l2 4.8V16"/><path d="M3 16h18M5 12h14"/><circle cx="7.5" cy="17.6" r="1.8"/><circle cx="16.5" cy="17.6" r="1.8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 7H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-5.6 7-5.6s7 2 7 5.6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.2 1.5a12 12 0 0 0 5.7 5.7L16 13l5 2v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4 5.2A2 2 0 0 1 6 3z"/></symbol>
+  <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="M14 6l-6 6 6 6"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 7h11v9H2zM13 10h4l3 3v3h-7"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.4-7 8.5-4.1-1.1-7-4.3-7-8.5V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4.5l3 2"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 1 1-2.6-6.1"/><path d="M20 3v5h-5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15 12 21 12 21z"/><circle cx="12" cy="10.4" r="2.3"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r="0.6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10" width="15" height="10" rx="2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 5L3 12l5 2 2 5 3.5-3.5L18 19z"/><path d="M8 14l9-7"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.5l1.4 2.4 2.4 1.4 1.2-1.2 1.6.7c.4.9-.2 1.6-1 1.8-2.6.6-5.6-2.4-6.2-4-.2-.7.3-1.3.9-1.5z"/></symbol>
+  <symbol id="p-disc" viewBox="0 0 64 64"><circle cx="32" cy="32" r="23"/><circle cx="32" cy="32" r="11"/><circle cx="49" cy="32" r="2.2"/><circle cx="44" cy="44" r="2.2"/><circle cx="32" cy="49" r="2.2"/><circle cx="20" cy="44" r="2.2"/><circle cx="15" cy="32" r="2.2"/><circle cx="20" cy="20" r="2.2"/><circle cx="32" cy="15" r="2.2"/><circle cx="44" cy="20" r="2.2"/></symbol>
+  <symbol id="p-pad" viewBox="0 0 64 64"><rect x="13" y="22" width="38" height="9" rx="3"/><rect x="16" y="33" width="32" height="13" rx="3"/><path d="M26 26h12"/><path d="M22 39h20"/></symbol>
+  <symbol id="p-oilfilter" viewBox="0 0 64 64"><rect x="21" y="15" width="22" height="35" rx="5"/><path d="M21 24h22"/><path d="M27 29v16M32 29v16M37 29v16"/></symbol>
+  <symbol id="p-airfilter" viewBox="0 0 64 64"><rect x="10" y="22" width="44" height="20" rx="5"/><path d="M18 22v20M26 22v20M32 22v20M38 22v20M46 22v20"/><path d="M10 48h44"/></symbol>
+  <symbol id="p-wiper" viewBox="0 0 64 64"><path d="M10 48l34-18"/><path d="M10 48l38-20"/><path d="M44 30l6-14"/><rect x="46" y="10" width="10" height="7" rx="2"/></symbol>
+  <symbol id="p-battery" viewBox="0 0 64 64"><rect x="12" y="20" width="40" height="28" rx="4"/><rect x="18" y="14" width="9" height="6" rx="1.5"/><rect x="37" y="14" width="9" height="6" rx="1.5"/><path d="M22 32h8M26 28v8M36 34h8"/></symbol>
+  <symbol id="p-belt" viewBox="0 0 64 64"><rect x="12" y="21" width="40" height="22" rx="11"/><rect x="21" y="28" width="22" height="8" rx="4"/><path d="M16 27v10M48 27v10"/></symbol>
+  <symbol id="p-radiator" viewBox="0 0 64 64"><rect x="14" y="18" width="36" height="28" rx="3"/><path d="M20 22v20M26 22v20M32 22v20M38 22v20M44 22v20"/><rect x="14" y="12" width="36" height="6" rx="2"/><rect x="14" y="46" width="36" height="6" rx="2"/></symbol>
+  <symbol id="p-plug" viewBox="0 0 64 64"><path d="M32 8v10"/><rect x="26" y="18" width="12" height="10" rx="2"/><rect x="24" y="24" width="16" height="4" rx="1"/><rect x="28" y="28" width="8" height="16" rx="2"/><path d="M32 44v9"/></symbol>
+  <symbol id="p-shock" viewBox="0 0 64 64"><path d="M32 5v9"/><rect x="24" y="14" width="16" height="8" rx="2"/><path d="M32 22v14"/><rect x="22" y="36" width="20" height="22" rx="4"/><path d="M22 44h20M22 50h20"/></symbol>
+  <symbol id="p-oil" viewBox="0 0 64 64"><rect x="18" y="20" width="20" height="30" rx="5"/><rect x="24" y="12" width="8" height="8" rx="2"/><path d="M38 40h12l6-8"/><path d="M26 28h4"/></symbol>
+  <symbol id="p-pump" viewBox="0 0 64 64"><circle cx="30" cy="34" r="14"/><circle cx="30" cy="34" r="5"/><rect x="42" y="30" width="12" height="8" rx="2"/><path d="M8 24v10h8"/></symbol>
+  <symbol id="p-sensor" viewBox="0 0 64 64"><rect x="20" y="24" width="16" height="22" rx="4"/><path d="M20 31h16M20 38h16"/><path d="M36 30h8c4 0 4-10 8-10"/><rect x="50" y="14" width="8" height="8" rx="2"/></symbol>
+  <symbol id="p-clutch" viewBox="0 0 64 64"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="14"/><circle cx="32" cy="32" r="4"/><circle cx="32" cy="14" r="2.6"/><circle cx="46" cy="24" r="2.6"/><circle cx="46" cy="41" r="2.6"/><circle cx="32" cy="50" r="2.6"/><circle cx="18" cy="41" r="2.6"/><circle cx="18" cy="24" r="2.6"/></symbol>
+  <symbol id="p-gasket" viewBox="0 0 64 64"><rect x="10" y="26" width="44" height="13" rx="3"/><circle cx="20" cy="32.5" r="2"/><circle cx="32" cy="32.5" r="2"/><circle cx="44" cy="32.5" r="2"/><circle cx="14" cy="22" r="2.5"/><circle cx="50" cy="22" r="2.5"/></symbol>
+</defs>
+</svg>
+
+<div class="topbar">
+  <div class="container">
+    <span class="promo"><svg class="icon"><use href="#i-truck"></use></svg> ارسال رایگان برای خریدهای بالای <strong>۵ میلیون تومان</strong></span>
+    <span class="spacer"></span>
+    <a href="#track" class="row hide-sm"><svg class="icon"><use href="#i-box"></use></svg> پیگیری سفارش</a>
+    <a href="tel:02191002234" class="row"><svg class="icon"><use href="#i-phone"></use></svg> ۰۲۱-۹۱۰۰۲۲۳۴</a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="container hdr-main">
+    <button class="burger" type="button" data-burger aria-label="منو"><svg class="icon"><use href="#i-menu"></use></svg></button>
+
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg class="icon"><use href="#i-gear"></use></svg></span>
+      <span class="logo-text"><b>یدکیار</b><span>قطعه اصل، مطابق خودرو</span></span>
+    </a>
+
+    <form class="search" action="products.html">
+      <select aria-label="دسته‌بندی جستجو">
+        <option>همه دسته‌ها</option>
+        <option>سیستم ترمز</option>
+      </select>
+      <input type="search" placeholder="جستجوی قطعه، برند یا کد فنی" aria-label="جستجو">
+      <button type="submit" aria-label="جستجو"><svg class="icon"><use href="#i-search"></use></svg></button>
+    </form>
+
+    <div class="hdr-actions">
+      <a href="#login" class="act">
+        <svg class="icon"><use href="#i-user"></use></svg>
+        <span class="act-txt"><span>امیرحسین پازوکی</span><b>حساب کاربری</b></span>
+      </a>
+      <a href="cart.html" class="act cart-btn">
+        <svg class="icon"><use href="#i-cart"></use></svg>
+        <span class="count" data-cart-count>۳</span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html">خانه</a>
+      <a href="products.html">قطعات و لوازم یدکی</a>
+      <a href="index.html#vehicle">انتخاب خودرو</a>
+      <a href="index.html#brands">برندها</a>
+      <a href="#contact">تماس با ما</a>
+      <span class="spacer"></span>
+      <a href="cart.html" class="row"><svg class="icon"><use href="#i-cart"></use></svg> سبد خرید</a>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <div class="container">
+      <a href="index.html">خانه</a>
+      <a href="products.html">قطعات و لوازم یدکی</a>
+      <a href="cart.html">سبد خرید</a>
+      <a href="tel:02191002234">تماس با ما</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="crumb">
+      <a href="index.html">خانه</a>
+      <svg class="icon"><use href="#i-chev-left"></use></svg>
+      <a href="cart.html">سبد خرید</a>
+      <svg class="icon"><use href="#i-chev-left"></use></svg>
+      <b>تسویه حساب</b>
+    </nav>
+
+    <div class="steps">
+      <div class="step is-done"><i><svg class="icon" style="width:13px;height:13px"><use href="#i-check"></use></svg></i> سبد خرید</div>
+      <span class="step-sep"></span>
+      <div class="step is-current"><i>۲</i> آدرس و روش ارسال</div>
+      <span class="step-sep"></span>
+      <div class="step"><i>۳</i> پرداخت</div>
+      <span class="step-sep"></span>
+      <div class="step"><i>۴</i> تأیید سفارش</div>
+    </div>
+
+    <div class="co">
+      <div class="co-main">
+        <section class="card-box">
+          <h3><svg class="icon"><use href="#i-pin"></use></svg> آدرس تحویل <span class="muted">— یکی از آدرس‌های ذخیره‌شده را انتخاب کنید</span></h3>
+
+          <div class="addr-list" data-addr>
+            <label class="addr is-active">
+              <input type="radio" name="addr" checked>
+              <span class="addr-body">
+                <b>امیرحسین پازوکی <span class="tag">خانه</span> <span class="tag" style="background:var(--success-soft);color:var(--success)">آدرس پیش‌فرض</span></b>
+                <span class="l">تهران، خیابان ولیعصر، کوچه بهار، پلاک ۱۲، واحد ۳ — کد پستی ۱۹۹۸۷۶۵۴۳۲</span>
+                <span class="l">شماره تماس: ۰۹۱۲۱۲۳۴۵۶۷</span>
+              </span>
+              <button class="addr-edit" type="button">ویرایش</button>
+            </label>
+
+            <label class="addr">
+              <input type="radio" name="addr">
+              <span class="addr-body">
+                <b>امیرحسین پازوکی <span class="tag">محل کار</span></b>
+                <span class="l">تهران، خیابان کریمخان زند، پلاک ۸۸، طبقه ۴، واحد ۱۲ — کد پستی ۱۵۸۷۶۴۳۲۱۱</span>
+                <span class="l">شماره تماس: ۰۲۱-۸۸۳۴۵۶۷۸</span>
+              </span>
+              <button class="addr-edit" type="button">ویرایش</button>
+            </label>
+          </div>
+
+          <button class="btn" type="button" style="justify-self:start">
+            <svg class="icon"><use href="#i-plus"></use></svg> افزودن آدرس جدید
+          </button>
+        </section>
+
+        <section class="card-box">
+          <h3><svg class="icon"><use href="#i-truck"></use></svg> روش ارسال</h3>
+
+          <div class="ship-list" data-ship>
+            <label class="ship is-active">
+              <input type="radio" name="ship" checked data-ship-price="95000" data-ship-label="پست پیشتاز">
+              <span class="sbody"><b>پست پیشتاز</b><span>تحویل ۳ تا ۵ روز کاری — سراسر کشور</span></span>
+              <span class="sprice">۹۵,۰۰۰ تومان</span>
+            </label>
+
+            <label class="ship">
+              <input type="radio" name="ship" data-ship-price="145000" data-ship-label="پیک موتوری تهران">
+              <span class="sbody"><b>پیک موتوری تهران</b><span>تحویل امروز برای سفارش‌های ثبت‌شده تا ساعت ۱۴</span></span>
+              <span class="sprice">۱۴۵,۰۰۰ تومان</span>
+            </label>
+
+            <label class="ship">
+              <input type="radio" name="ship" data-ship-price="0" data-ship-label="تحویل حضوری">
+              <span class="sbody"><b>تحویل حضوری از انبار</b><span>تهران، امیرکبیر، پلاک ۱۲۴ — شنبه تا پنجشنبه ۹ تا ۱۷</span></span>
+              <span class="sprice free">رایگان</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="card-box">
+          <h3><svg class="icon"><use href="#i-info"></use></svg> یادداشت سفارش <span class="muted">— اختیاری</span></h3>
+          <div class="field">
+            <textarea placeholder="مثلاً: قبل از ارسال برای هماهنگی تماس بگیرید."></textarea>
+          </div>
+        </section>
+      </div>
+
+      <aside class="summary" data-subtotal="4560000">
+        <h3>خلاصه سفارش</h3>
+
+        <div class="co-items">
+          <div class="co-item">
+            <span class="cimg"><img class="ph" src="assets/img/parts/brake-pads.jpg" alt="" loading="lazy"></span>
+            <span class="nm"><b>لنت ترمز جلو سرامیک — تکلان</b><span>۱ عدد</span></span>
+            <span class="am">۲,۸۵۰,۰۰۰</span>
+          </div>
+          <div class="co-item">
+            <span class="cimg"><img class="ph" src="assets/img/parts/oil-filter.jpg" alt="" loading="lazy"></span>
+            <span class="nm"><b>فیلتر روغن — مانو W 712/52</b><span>۲ عدد</span></span>
+            <span class="am">۹۷۰,۰۰۰</span>
+          </div>
+          <div class="co-item">
+            <span class="cimg"><img class="ph" src="assets/img/parts/wiper.jpg" alt="" loading="lazy"></span>
+            <span class="nm"><b>تیغه برف‌پاک‌کن ۲۴ اینچ — بوش</b><span>۱ عدد</span></span>
+            <span class="am">۷۴۰,۰۰۰</span>
+          </div>
+          <a href="cart.html" class="sec-link" style="font-size:12.5px;padding:6px 0">ویرایش سبد خرید <svg class="icon"><use href="#i-chev-left"></use></svg></a>
+        </div>
+
+        <div class="sum-body" style="padding-top:0">
+          <div class="sumrow"><span>مبلغ کالاها</span><b>۵,۱۱۰,۰۰۰</b></div>
+          <div class="sumrow discount"><span>تخفیف محصولات</span><b>۵۵۰,۰۰۰ −</b></div>
+          <div class="sumrow"><span>هزینه ارسال</span><b data-ship-cost>۹۵,۰۰۰</b></div>
+          <div class="sum-div"></div>
+          <div class="sumrow total"><span>مبلغ قابل پرداخت</span><b><span data-total>۴,۶۵۵,۰۰۰</span> <small style="font-size:11px;font-weight:400;color:var(--muted)">تومان</small></b></div>
+        </div>
+
+        <div class="sum-foot">
+          <div class="pay-cta">
+            <a href="#pay" class="btn btn--primary btn--block btn--lg">
+              <svg class="icon"><use href="#i-card"></use></svg> پرداخت و ثبت سفارش
+            </a>
+            <span class="pay-note"><svg class="icon"><use href="#i-lock"></use></svg> پرداخت امن از طریق درگاه بانکی</span>
+          </div>
+        </div>
+
+        <div class="trust-row">
+          <div><svg class="icon"><use href="#i-shield"></use></svg> ضمانت اصالت و سلامت فیزیکی کالا</div>
+          <div><svg class="icon"><use href="#i-clock"></use></svg> ارسال سفارش‌های ثبت‌شده تا ۱۴، همان روز</div>
+          <div><svg class="icon"><use href="#i-refresh"></use></svg> ۷ روز مهلت مرجوعی</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="ftr" id="contact">
+  <div class="container">
+    <div class="ftr-top">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-mark"><svg class="icon"><use href="#i-gear"></use></svg></span>
+          <span class="logo-text"><b>یدکیار</b><span>قطعه اصل، مطابق خودرو</span></span>
+        </a>
+        <p>فروشگاه اینترنتی تخصصی لوازم یدکی خودرو؛ با تمرکز روی سازگاری دقیق قطعه با مدل و تیپ خودرو، کد فنی معتبر و ضمانت اصالت کالا.</p>
+        <div class="trust">
+          <div class="trust-badge">نماد<br>اعتماد<br>الکترونیکی</div>
+          <div class="trust-badge">ساماندهی<br>رسانه‌های<br>دیجیتال</div>
+          <div class="trust-badge">ضمانت<br>اصالت<br>کالا</div>
+        </div>
+      </div>
+      <div>
+        <h4>خدمات مشتریان</h4>
+        <ul>
+          <li><a href="#track">پیگیری سفارش</a></li>
+          <li><a href="#returns">شرایط مرجوعی و گارانتی</a></li>
+          <li><a href="#shipping">روش‌های ارسال</a></li>
+          <li><a href="#faq">سوالات متداول</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>دسته‌بندی‌ها</h4>
+        <ul>
+          <li><a href="products.html">سیستم ترمز</a></li>
+          <li><a href="products.html">فیلتر و روغن</a></li>
+          <li><a href="products.html">برق و باتری</a></li>
+          <li><a href="products.html">جلوبندی و تعلیق</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تماس با ما</h4>
+        <ul class="contact">
+          <li><svg class="icon"><use href="#i-phone"></use></svg> ۰۲۱-۹۱۰۰۲۲۳۴</li>
+          <li><svg class="icon"><use href="#i-pin"></use></svg> تهران، خیابان امیرکبیر، پلاک ۱۲۴</li>
+          <li><svg class="icon"><use href="#i-clock"></use></svg> شنبه تا پنجشنبه، ۹ تا ۲۱</li>
+        </ul>
+        <div class="socials" style="margin-top:16px">
+          <a href="#" aria-label="اینستاگرام"><svg class="icon"><use href="#i-instagram"></use></svg></a>
+          <a href="#" aria-label="تلگرام"><svg class="icon"><use href="#i-telegram"></use></svg></a>
+          <a href="#" aria-label="واتس‌اپ"><svg class="icon"><use href="#i-whatsapp"></use></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© ۱۴۰۵ یدکیار — تمام حقوق محفوظ است.</span>
+      <span class="demo-flag">پیش‌نمایش دیزاین · داده‌ها واقعی، بک‌اند متصل نیست</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" data-toast>
+  <svg class="icon"><use href="#i-check"></use></svg>
+  <span data-toast-text>به سبد خرید اضافه شد</span>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
