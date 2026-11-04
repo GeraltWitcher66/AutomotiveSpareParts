@@ -412,6 +412,73 @@
     });
   }
 
+  /* ---------------- live stats ---------------- */
+  var counters = document.querySelectorAll("[data-count]");
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+    if (reduceMotion || document.hidden) {
+      el.textContent = money(target);
+      return;
+    }
+    var start = null;
+    var duration = 1200;
+    function frame(now) {
+      if (start === null) start = now;
+      var t = Math.min(1, (now - start) / duration);
+      var eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = money(Math.round(target * eased));
+      if (t < 1) window.requestAnimationFrame(frame);
+    }
+    window.requestAnimationFrame(frame);
+    // guarantee the final number even if frames are throttled
+    window.setTimeout(function () {
+      el.textContent = money(target);
+    }, duration + 200);
+  }
+
+  if (counters.length) {
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.35 }
+      );
+      counters.forEach(function (el) {
+        observer.observe(el);
+      });
+    } else {
+      counters.forEach(animateCounter);
+    }
+  }
+
+  var liveEl = document.querySelector("[data-live]");
+  if (liveEl) {
+    var live = parseInt(liveEl.getAttribute("data-live"), 10) || 0;
+    liveEl.textContent = money(live);
+
+    window.setInterval(function () {
+      live += Math.round(Math.random() * 8) - 3;
+      if (live < 320) live = 320 + Math.round(Math.random() * 20);
+      liveEl.textContent = money(live);
+
+      var value = liveEl.closest("b");
+      if (value) {
+        value.classList.add("is-bump");
+        window.setTimeout(function () {
+          value.classList.remove("is-bump");
+        }, 500);
+      }
+    }, 4200);
+  }
+
   /* ---------------- gallery thumbs (real photos) ---------------- */
   var mainImg = document.querySelector("[data-main-img]");
   document.querySelectorAll("[data-src]").forEach(function (thumb) {
