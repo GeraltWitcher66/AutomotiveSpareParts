@@ -44,6 +44,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -3427,6 +3428,138 @@ table.tbl td b {
     position: static;
     justify-self: start;
     margin-top: 12px;
+  }
+}
+
+/* ---------- vehicle bar: tablet band ---------- */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .vbar .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 14px;
+    align-items: center;
+  }
+
+  .vselects {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+    gap: 8px;
+  }
+
+  .vselects .vsel {
+    min-width: 0;
+  }
+
+  .vchip {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+/* ---------- vehicle bar on small screens ---------- */
+@media (max-width: 900px) {
+  .vbar .container {
+    display: grid;
+    gap: 10px;
+    padding-block: 12px;
+  }
+
+  .vbar-label {
+    justify-content: flex-start;
+  }
+
+  .vselects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .vselects .vsel {
+    min-width: 0;
+  }
+
+  .vselects .btn {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .vchip {
+    width: 100%;
+    justify-content: space-between;
+    order: -1;
+  }
+}
+
+/* ---------- footer on mobile ---------- */
+@media (max-width: 720px) {
+  .ftr {
+    margin-top: 32px;
+  }
+
+  .ftr-top {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-block: 24px 6px;
+  }
+
+  .ftr-top > div {
+    padding-block: 16px;
+    border-block-end: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .ftr-top > div:first-child {
+    padding-block-start: 0;
+  }
+
+  .ftr-top > div:last-child {
+    border-block-end: 0;
+    padding-block-end: 4px;
+  }
+
+  .ftr h4 {
+    margin-bottom: 10px;
+    font-size: 13.5px;
+  }
+
+  .ftr p {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .ftr li + li {
+    margin-top: 7px;
+  }
+
+  .trust {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .trust-badge {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  .socials {
+    margin-top: 12px;
+  }
+
+  .ftr-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    padding-block: 14px 18px;
+  }
+
+  .ftr-bottom .demo-flag {
+    font-size: 10.5px;
+    padding: 3px 9px;
   }
 }
 
